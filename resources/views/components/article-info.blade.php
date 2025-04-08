@@ -1,5 +1,5 @@
 <div class="container mt-12 md:mt-16 lg:max-w-screen-md">
-    <div class="grid grid-cols-2 gap-4 leading-tight md:grid-cols-4">
+    <div class="grid grid-cols-3 gap-4 leading-tight md:grid-cols-3">
         <div class="flex-1 p-3 text-center rounded-lg bg-gray-50">
             <x-heroicon-o-calendar class="mx-auto mb-1 opacity-75 size-6" />
             {{ $post['modified_at'] ? 'تم تعديله' : 'تم نشره' }}<br />
