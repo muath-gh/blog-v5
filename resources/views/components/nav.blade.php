@@ -37,7 +37,7 @@
         الأحدث
     </a>
 
-    <a
+    {{-- <a
         wire:navigate
         href="{{ route('links.index') }}"
         @class([
@@ -52,7 +52,7 @@
         @endif
 
         روابط
-    </a>
+    </a> --}}
 
     @auth
         <x-dropdown>
