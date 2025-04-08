@@ -1,0 +1,57 @@
+{
+  "resources/css/app.css": {
+    "file": "assets/app-D4mgfPqM.css",
+    "src": "resources/css/app.css",
+    "isEntry": true
+  },
+  "resources/img/books/battle-ready-laravel.jpg": {
+    "file": "assets/battle-ready-laravel-CqhKwjKu.jpg",
+    "src": "resources/img/books/battle-ready-laravel.jpg"
+  },
+  "resources/img/books/consuming-apis-laravel.jpg": {
+    "file": "assets/consuming-apis-laravel-I7ptdYxB.jpg",
+    "src": "resources/img/books/consuming-apis-laravel.jpg"
+  },
+  "resources/img/books/domain-driven-laravel.jpg": {
+    "file": "assets/domain-driven-laravel-Dky4Yz9m.jpg",
+    "src": "resources/img/books/domain-driven-laravel.jpg"
+  },
+  "resources/img/books/level-up-tailwind-css.jpg": {
+    "file": "assets/level-up-tailwind-css-CrT3vvFt.jpg",
+    "src": "resources/img/books/level-up-tailwind-css.jpg"
+  },
+  "resources/img/books/mastering-laravel-validation.jpg": {
+    "file": "assets/mastering-laravel-validation-DetsWCa3.jpg",
+    "src": "resources/img/books/mastering-laravel-validation.jpg"
+  },
+  "resources/img/books/microservices-laravel.jpg": {
+    "file": "assets/microservices-laravel-CotioJhb.jpg",
+    "src": "resources/img/books/microservices-laravel.jpg"
+  },
+  "resources/img/books/vue-design-patterns.jpg": {
+    "file": "assets/vue-design-patterns-BZwomxop.jpg",
+    "src": "resources/img/books/vue-design-patterns.jpg"
+  },
+  "resources/img/mudev.png": {
+    "file": "assets/mudev-BgnfBQP-.png",
+    "src": "resources/img/mudev.png"
+  },
+  "resources/img/redirect-pizza.png": {
+    "file": "assets/redirect-pizza-lUHq4ohu.png",
+    "src": "resources/img/redirect-pizza.png"
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-DuJUxdLE.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true
+  },
+  "resources/svg/beyond-code.svg": {
+    "file": "assets/beyond-code-BplWgLAv.svg",
+    "src": "resources/svg/beyond-code.svg"
+  },
+  "resources/svg/nobinge.svg": {
+    "file": "assets/nobinge-gaw16-fq.svg",
+    "src": "resources/svg/nobinge.svg"
+  }
+}
