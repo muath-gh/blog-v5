@@ -55,17 +55,33 @@ $table->index('email');
 
 من الخطأ إرسال آلاف النتائج دفعة واحدة! استخدم طرق التقسيم مثل:
 
-- **Offset-based pagination:**
+#### - `paginate()`
+
+يعتمد على `LIMIT` و `OFFSET`، ويوفّر روابط للتنقل بين الصفحات بشكل تلقائي.
 
 <div dir="ltr">
 
 ```php
-User::orderBy('id')->offset(100)->limit(10)->get();
+User::paginate(15);
 ```
 
 </div>
 
-- **Cursor pagination (أفضل لأداء ثابت):**
+#### - `simplePaginate()`
+
+مشابه لـ `paginate()` لكنه لا يحسب عدد الصفحات الإجمالي، مما يجعله أخف في الأداء.
+
+<div dir="ltr">
+
+```php
+User::simplePaginate(15);
+```
+
+</div>
+
+#### - `cursorPaginate()`
+
+يعتمد على الفهرسة بدلاً من الترقيم، ويوفّر أداءً ثابتًا حتى مع البيانات الكبيرة.
 
 <div dir="ltr">
 
@@ -74,6 +90,8 @@ User::orderBy('id')->cursorPaginate(10);
 ```
 
 </div>
+
+اختر الطريقة المناسبة حسب عدد البيانات وطبيعة الاستخدام.
 
 ---
 
