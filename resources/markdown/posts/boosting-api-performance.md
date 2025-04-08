@@ -26,20 +26,24 @@ Categories: performance, api, backend
 
 أحد الأسباب الشائعة لبطء الـ API هو استعلامات قاعدة البيانات غير المحسّنة. هذا النوع من المشاكل غالبًا لا يُكتشف إلا بعد التشغيل الفعلي، لذلك يجب الانتباه إليه من البداية.
 
-### a) الفهارس (Indexes)
+### 1. الفهارس (Indexes)
 
 الفهارس تُشبه الفهرس الموجود في نهاية الكتب، حيث تمكّن قاعدة البيانات من العثور على الصفوف المطلوبة بسرعة دون مسح كل الصفوف.
 
 - أنشئ فهارس على الأعمدة التي تُستخدم في البحث أو الفرز أو الربط.
 - في Laravel يمكنك استخدام migration لإضافة فهرس بسهولة:
 
+<div dir="ltr">
+
 ```php
 $table->index('email');
 ```
 
+</div>
+
 - راقب أداء الاستعلامات باستخدام أدوات مثل **EXPLAIN** في MySQL أو **Laravel Debugbar**.
 
-### b) التنظيم (Normalization) وإلغاء التنظيم (Denormalization)
+### 2. التنظيم (Normalization) وإلغاء التنظيم (Denormalization)
 
 - **التنظيم:** يُقلل التكرار، يُحسّن التكامل، ويُناسب التطبيقات المعتمدة على الكتابة الكثيفة.
 - **إلغاء التنظيم:** يُسرّع القراءة، مناسب لتقارير أو صفحات يتم استدعاؤها كثيرًا.
@@ -47,19 +51,29 @@ $table->index('email');
 مثال:
 - بدلاً من عمل `JOIN` كل مرة بين جدول المستخدمين والمدن، يمكن تخزين اسم المدينة مباشرة في جدول المستخدم إذا كانت البيانات لا تتغير كثيرًا.
 
-### c) التقسيم (Pagination)
+### 3. التقسيم (Pagination)
 
 من الخطأ إرسال آلاف النتائج دفعة واحدة! استخدم طرق التقسيم مثل:
 
 - **Offset-based pagination:**
+
+<div dir="ltr">
+
 ```php
 User::orderBy('id')->offset(100)->limit(10)->get();
 ```
 
+</div>
+
 - **Cursor pagination (أفضل لأداء ثابت):**
+
+<div dir="ltr">
+
 ```php
 User::orderBy('id')->cursorPaginate(10);
 ```
+
+</div>
 
 ---
 
@@ -80,11 +94,15 @@ User::orderBy('id')->cursorPaginate(10);
 
 ### استخدام الكاش في Laravel:
 
+<div dir="ltr">
+
 ```php
 $data = Cache::remember('key', now()->addMinutes(10), function () {
     return Post::latest()->take(5)->get();
 });
 ```
+
+</div>
 
 يمكنك استخدام `tags` لتحديث أجزاء معينة عند الحاجة فقط.
 
@@ -116,15 +134,23 @@ $data = Cache::remember('key', now()->addMinutes(10), function () {
 
 ### مثال عملي:
 
+<div dir="ltr">
+
 ```php
 SendNewsletterEmail::dispatch($user->email);
 ```
 
+</div>
+
 يمكنك جدولة هذه المهام أو تأخير تنفيذها:
+
+<div dir="ltr">
 
 ```php
 SendNewsletterEmail::dispatch($user->email)->delay(now()->addMinutes(5));
 ```
+
+</div>
 
 وهذا مفيد في حملات البريد أو التنبيهات المؤجلة.
 
