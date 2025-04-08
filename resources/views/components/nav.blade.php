@@ -58,7 +58,7 @@
         <x-dropdown>
             <x-slot:btn>
                 <x-heroicon-o-user class="mx-auto size-6 md:size-7" />
-                Account
+                حسابي
             </x-slot>
 
             <x-slot:items>
@@ -76,12 +76,12 @@
 
                 <x-dropdown.item href="https://github.com/settings" target="_blank">
                     <x-heroicon-o-arrow-top-right-on-square class="size-4" />
-                    Manage on GitHub
+                    ادارته من خلال GitHub
                 </x-dropdown.item>
 
                 <x-dropdown.item destructive form="logout-form">
                     <x-heroicon-o-arrow-right-end-on-rectangle class="size-4" />
-                    Log out
+                    تسجيل خروج
                 </x-dropdown.item>
 
                 <form method="POST" action="{{ route('auth.logout') }}" id="logout-form" class="hidden">

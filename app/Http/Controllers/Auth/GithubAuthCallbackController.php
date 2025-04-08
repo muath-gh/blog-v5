@@ -24,6 +24,6 @@ class GithubAuthCallbackController extends Controller
 
         auth()->login($user, true);
 
-        return redirect()->intended()->with('status', 'You have been logged in.');
+        return redirect()->intended()->with('status', 'تم تسجيل دخولك بنجاح.');
     }
 }
