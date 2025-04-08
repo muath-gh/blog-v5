@@ -33,7 +33,7 @@
         {!! Str::markdown($post['description']) !!}
     </div>
 
-    <div class="grid grid-cols-3 gap-4 mt-6 text-sm/tight">
+    <div class="grid grid-cols-2 gap-4 mt-6 text-sm/tight">
         <div class="flex-1 p-3 text-center rounded-lg bg-gray-50">
             <x-heroicon-o-calendar class="mx-auto mb-1 opacity-75 size-5" />
             {{ ($post['modified_at'] ?? $post['published_at'])->isoFormat('ll') }}
