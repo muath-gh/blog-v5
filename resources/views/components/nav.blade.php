@@ -128,17 +128,17 @@
                 تابعني
             </x-dropdown.divider>
 
-            <x-dropdown.item href="https://github.com/benjamincrozat" target="_blank">
+            <x-dropdown.item href="https://www.facebook.com/profile.php?id=100009582129790" target="_blank">
                 <x-iconoir-facebook class="size-4" />
                 Facebook
             </x-dropdown.item>
 
-            <x-dropdown.item href="https://www.linkedin.com/in/benjamincrozat" target="_blank">
+            <x-dropdown.item href="#" target="_blank">
                 <x-iconoir-linkedin class="size-4" />
                 LinkedIn
             </x-dropdown.item>
 
-            <x-dropdown.item href="https://x.com/benjamincrozat" target="_blank">
+            <x-dropdown.item href="#" target="_blank">
                 <x-iconoir-x class="size-4" />
                 X
             </x-dropdown.item>
