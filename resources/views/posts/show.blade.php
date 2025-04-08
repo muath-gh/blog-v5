@@ -4,15 +4,15 @@
     :image="$post['image']"
     :title="$post['title']"
 >
-    <div class="flex items-center gap-8 px-4 mt-4 overflow-x-scroll md:px-8 snap-mandatory snap-x md:mt-8">
+    {{-- <div class="flex items-center gap-8 px-4 mt-4 overflow-x-scroll md:px-8 snap-mandatory snap-x md:mt-8">
         @foreach (collect(config('merchants.books'))->shuffle() as $book)
             <x-book :$book class="flex-1 snap-start scroll-ml-4 md:scroll-ml-8 min-w-[150px]" />
         @endforeach
-    </div>
+    </div> --}}
 
     <x-breadcrumbs class="container mt-12 md:mt-16 xl:max-w-screen-lg">
         <x-breadcrumbs.item href="{{ route('posts.index') }}">
-            Posts
+            المقالات
         </x-breadcrumbs.item>
 
         <x-breadcrumbs.item class="line-clamp-1">
@@ -41,47 +41,7 @@
             {{ $post['title'] }}
         </h1>
 
-        <div class="container mt-12 md:mt-16 lg:max-w-screen-md">
-            <div class="grid grid-cols-2 gap-4 leading-tight md:grid-cols-4">
-                <div class="flex-1 p-3 text-center rounded-lg bg-gray-50">
-                    <x-heroicon-o-calendar class="mx-auto mb-1 opacity-75 size-6" />
-                    {{ $post['modified_at'] ? 'Modified' : 'Published' }}<br />
-                    {{ ($post['modified_at'] ?? $post['published_at'])->isoFormat('ll') }}
-                </div>
-
-                <div class="flex-1 p-3 text-center rounded-lg bg-gray-50">
-                    <x-heroicon-o-user class="mx-auto mb-1 opacity-75 size-6" />
-                    Written by<br />
-                    Benjamin Crozat
-                </div>
-
-                <a href="#comments" class="group">
-                    <div @class([
-                        'flex-1 p-3 text-center transition-colors rounded-lg bg-gray-50 hover:bg-blue-50 group-hover:text-blue-900',
-                        'text-blue-600' => $post['comments_count'] > 0,
-                    ])>
-                        <x-heroicon-o-chat-bubble-oval-left-ellipsis class="mx-auto mb-1 opacity-75 size-6" />
-                        {{ $post['comments_count'] }}<br />
-                        {{ trans_choice('comment|comments', $post['comments_count']) }}
-                    </div>
-                </a>
-
-                <div class="flex-1 p-3 text-center rounded-lg bg-gray-50">
-                    <x-heroicon-o-clock class="mx-auto mb-1 opacity-75 size-6" />
-                    {{ $readTime ?? 0 }} minutes<br />
-                    read
-                </div>
-            </div>
-
-            <x-table-of-contents
-                :headings="extract_headings_from_markdown($post['content'])"
-                class="mt-4 ml-0"
-            />
-
-            <x-prose class="mt-12 md:mt-16">
-                {!! Str::markdown($post['content']) !!}
-            </x-prose>
-        </div>
+       <x-article-info :post="$post"/>
     </article>
 
     <x-section

@@ -17,7 +17,7 @@
             <x-heroicon-o-home class="mx-auto size-6 md:size-7" />
         @endif
 
-        Home
+        الرئسية
     </a>
 
     <a
@@ -34,7 +34,7 @@
             <x-heroicon-o-fire class="mx-auto size-6 md:size-7" />
         @endif
 
-        Latest
+        الأحدث
     </a>
 
     <a
@@ -51,7 +51,7 @@
             <x-heroicon-o-link class="mx-auto size-6 md:size-7" />
         @endif
 
-        Links
+        روابط
     </a>
 
     @auth
@@ -94,8 +94,8 @@
             href="{{ route('auth.redirect') }}"
             class="transition-colors hover:text-blue-600"
         >
-            <x-iconoir-github class="mx-auto size-6 md:size-7" />
-            Sign in
+        <x-iconoir-log-in class="mx-auto size-6 md:size-7" />
+            تسجيل دخول
         </a>
     @endauth
 
@@ -105,32 +105,32 @@
                 class="mx-auto transition-transform size-6 md:size-7"
                 x-bind:class="{ 'rotate-90': open }"
             />
-            More
+            المزيد
         </x-slot>
 
         <x-slot:items>
-            <x-dropdown.item href="https://github.com/benjamincrozat/blog-v5" target="_blank">
+            {{-- <x-dropdown.item href="https://github.com/benjamincrozat/blog-v5" target="_blank">
                 <x-iconoir-git-fork class="size-4" />
                 Fork the source code
-            </x-dropdown.item>
+            </x-dropdown.item> --}}
 
             <x-dropdown.item href="{{ route('home') }}#about">
                 <x-heroicon-o-question-mark-circle class="size-4" />
-                About me
+                من أكون ؟
             </x-dropdown.item>
 
             <x-dropdown.item href="mailto:hello@benjamincrozat.com">
                 <x-heroicon-o-envelope class="size-4" />
-                Contact me
+                تواصل معي
             </x-dropdown.item>
 
             <x-dropdown.divider>
-                Follow me
+                تابعني
             </x-dropdown.divider>
 
             <x-dropdown.item href="https://github.com/benjamincrozat" target="_blank">
-                <x-iconoir-github class="size-4" />
-                GitHub
+                <x-iconoir-facebook class="size-4" />
+                Facebook
             </x-dropdown.item>
 
             <x-dropdown.item href="https://www.linkedin.com/in/benjamincrozat" target="_blank">
