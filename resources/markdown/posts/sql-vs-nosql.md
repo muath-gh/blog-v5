@@ -1,5 +1,5 @@
 ---
-Image: https://muath.algharabli.com/images/sql-vs-nosql.png
+Image: https://muath.algharabli.com/imgs/blog/posts/sqlvsnosql/sql-vs-nosql.png
 Title: "Sql VS NOSql"
 Description: "مقارنة مبسّطة بين قواعد البيانات SQL و NoSQL، نشرح فيها الفروقات الجوهرية بين النوعين، ومتى تختار كل واحدة منهما حسب طبيعة مشروعك."
 Published at: 2023-01-26
