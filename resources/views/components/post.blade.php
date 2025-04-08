@@ -45,10 +45,10 @@
                 {{ $post['comments_count'] }} {{ trans_choice('تعليق|تعليقات', $post['comments_count']) }}
             </div>
         </a>
-
+{{-- 
         <div class="flex-1 p-3 text-center rounded-lg bg-gray-50">
             <x-heroicon-o-clock class="mx-auto mb-1 opacity-75 size-5" />
             {{ $readTime ?? 0 }} دقائق
-        </div>
+        </div> --}}
     </div>
 </div>
