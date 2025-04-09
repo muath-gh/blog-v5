@@ -54,7 +54,7 @@
         <livewire:comments :post-slug="$post['slug']" />
     </x-section>
 
-</x-notify/>
+</x-notify>
 
     <script type="application/ld+json">
         {
