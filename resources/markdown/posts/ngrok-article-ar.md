@@ -48,6 +48,7 @@ Categories: tools, devtools, backend
 
 بعد التسجيل، ngrok سيعطيك **Auth Token** خاص بك، لاستخدامه في التهيئة:
 <div dir="ltr">
+
 ```bash
 ngrok config add-authtoken <your_token_here>
 ```
@@ -59,6 +60,7 @@ ngrok config add-authtoken <your_token_here>
 
 إذا كان مشروعك يعمل على البورت `8080` مثلًا، نفّذ الأمر التالي:
 <div dir="ltr">
+
 ```bash
 ngrok http http://localhost:8080
 ```
@@ -72,6 +74,7 @@ ngrok http http://localhost:8080
 لنفترض أنك تطور تطبيق Laravel يعمل على `http://localhost:8000`  
 يمكنك استخدام الأمر التالي لتشارك التطبيق خارجيًا:
 <div dir="ltr">
+
 ```bash
 ngrok http 8000
 ```
