@@ -27,7 +27,7 @@ class WriteComment extends Component
 
         $this->reset('content');
 
-        $this->dispatch('notify');
+        $this->dispatch('notify',["detail"=>"تم اضافة التعليق بنجاح"]);
         $this->dispatch('commentAdded');
     }
 
