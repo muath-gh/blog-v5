@@ -133,15 +133,12 @@
                 Facebook
             </x-dropdown.item>
 
-            <x-dropdown.item href="#" target="_blank">
-                <x-iconoir-linkedin class="size-4" />
-                LinkedIn
+            <x-dropdown.item href="https://www.instagram.com/moath_939/" target="_blank">
+                <x-iconoir-instagram class="size-4" />
+                Instagram
             </x-dropdown.item>
 
-            <x-dropdown.item href="#" target="_blank">
-                <x-iconoir-x class="size-4" />
-                X
-            </x-dropdown.item>
+        
         </x-slot>
     </x-dropdown>
 </nav>
