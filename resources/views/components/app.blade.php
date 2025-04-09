@@ -1,6 +1,6 @@
 @props([
     'canonical' => url()->current(),
-    'description' => '',
+    'description' => 'شروحات متقدمة في Laravel و PHP ومحتوى تقني عربي فريد.',
     'image' => '',
     'title' => config('app.name'),
 ])
@@ -19,10 +19,10 @@
         <link rel="icon" type="image/png" sizes="192x192" href="{{ asset('favicon/favicon-192x192.png') }}">
         <link rel="icon" type="image/png" sizes="256x256" href="{{ asset('favicon/favicon-256x256.png') }}"> --}}
         <title>{{ $title }}</title>
-
+        <meta name="keywords" content="معاذ الغرابلي, Laravel, PHP, مطور ويب, API, دروس برمجة, pushCode">
         <meta name="title" content="{{ $title }}" />
         <meta name="description" content="{{ $description }}" />
-
+        <meta name="author" content="Muath Algharabli">
         <meta property="og:type" content="website" />
         <meta property="og:url" content="{{ url()->current() }}" />
         <meta property="og:title" content="{{ $title }}" />
