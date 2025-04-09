@@ -28,6 +28,15 @@
         <meta name="twitter:description" content="{{ $description }}" />
         <meta name="twitter:image" content="{{ $image }}" />
 
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-73Z0E87ZTV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-73Z0E87ZTV');
+</script>
+
         <livewire:styles />
 
         @vite('resources/css/app.css')
