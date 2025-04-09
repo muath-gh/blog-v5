@@ -54,6 +54,8 @@
         <livewire:comments :post-slug="$post['slug']" />
     </x-section>
 
+</x-notify/>
+
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
