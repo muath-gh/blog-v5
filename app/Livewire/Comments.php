@@ -9,7 +9,7 @@ use Illuminate\View\View;
 class Comments extends Component
 {
     public string $postSlug;
-
+    protected $listeners = ['commentAdded' => '$refresh'];
     public function render() : View
     {
         return view('livewire.comments', [

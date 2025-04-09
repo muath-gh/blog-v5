@@ -3,6 +3,8 @@
         class="fixed bottom-4 left-1/2 text-center cursor-default shadow-lg shadow-blue-600/50 z-10 -translate-x-1/2 bg-blue-600/85 backdrop-blur-md text-white w-max min-w-[240px] px-4 py-3 font-medium rounded-lg"
         x-data="{ show: false }"
         x-cloak
+        x-on:notify.window="message = $event.detail; show = true; setTimeout(() => show = false, 5000)"
+
         x-init="setTimeout(() => {
             show = true
 
