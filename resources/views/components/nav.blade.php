@@ -119,7 +119,7 @@
                 من أكون ؟
             </x-dropdown.item>
 
-            <x-dropdown.item href="mailto:hello@benjamincrozat.com">
+            <x-dropdown.item href="https://www.instagram.com/moath_939/">
                 <x-heroicon-o-envelope class="size-4" />
                 تواصل معي
             </x-dropdown.item>
