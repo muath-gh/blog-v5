@@ -27,7 +27,7 @@ class WriteComment extends Component
 
         $this->reset('content');
 
-        session()->flash('message', 'تم إضافة تعليقك بنجاح.');
+        session()->flash('status', 'تم إضافة تعليقك بنجاح.');
         $this->dispatch('commentAdded');
     }
 
