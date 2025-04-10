@@ -7,8 +7,8 @@
         wire:navigate
         href="{{ route('home') }}"
         @class([
-            'transition-colors hover:text-blue-600',
-            'text-blue-600' => request()->routeIs('home'),
+            'transition-colors hover:text-primary-color',
+            'text-primary-color' => request()->routeIs('home'),
         ])"
     >
         @if (request()->routeIs('home'))
@@ -24,8 +24,8 @@
         wire:navigate
         href="{{ route('posts.index') }}"
         @class([
-            'transition-colors hover:text-blue-600',
-            'text-blue-600' => request()->routeIs('posts.index'),
+            'transition-colors hover:text-primary-color',
+            'text-primary-color' => request()->routeIs('posts.index'),
         ])"
     >
         @if (request()->routeIs('posts.index'))
@@ -92,7 +92,7 @@
     @else
         <a
             href="{{ route('auth.redirect') }}"
-            class="transition-colors hover:text-blue-600"
+            class="transition-colors hover:text-primary-color"
         >
         <x-iconoir-log-in class="mx-auto size-6 md:size-7" />
             تسجيل دخول

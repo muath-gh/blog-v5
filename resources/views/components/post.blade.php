@@ -18,7 +18,7 @@
     @endif
 
     <div class="flex items-center justify-between gap-6 mt-5">
-        <a wire:navigate href="{{ route('posts.show', $post['slug']) }}" class="font-bold transition-colors text-xl/tight hover:text-blue-600">
+        <a wire:navigate href="{{ route('posts.show', $post['slug']) }}" class="font-bold transition-colors text-xl/tight hover:text-primary-color">
             {{ $post['title'] }}
         </a>
 

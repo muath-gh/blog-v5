@@ -13,7 +13,7 @@
 
         <button
             type="submit"
-            class="px-6 py-2 text-white bg-blue-600 rounded hover:bg-blue-700"
+            class="px-6 py-2 text-white bg-primary-color rounded hover:bg-blue-700"
         >
             إرسال التعليق
         </button>

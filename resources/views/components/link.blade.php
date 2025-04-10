@@ -28,7 +28,7 @@
     </div>
 
     <div class="flex items-center justify-between gap-6 mt-2">
-        <a href="{{ $link->url }}" target="_blank" class="font-bold transition-colors text-xl/tight hover:text-blue-600">
+        <a href="{{ $link->url }}" target="_blank" class="font-bold transition-colors text-xl/tight hover:text-primary-color">
             {{ $link->title }}
         </a>
 

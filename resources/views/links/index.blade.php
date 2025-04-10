@@ -11,7 +11,7 @@
     @if ($links->currentPage() === 1)
         <div class="container mt-16 mb-16 text-center text-black md:mb-32">
             <h1 class="font-bold tracking-tight text-black text-4xl/none md:text-5xl lg:text-7xl text-balance">
-                <span class="text-blue-600">Keep learning</span> with the community
+                <span class="text-primary-color">Keep learning</span> with the community
             </h1>
 
             @if ($distinctUserAvatars->isNotEmpty())

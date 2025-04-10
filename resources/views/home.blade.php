@@ -2,7 +2,7 @@
     <div class="container mt-8 text-center">
         @if ($visitors > 10)
             <div class="font-bold tracking-tight text-black text-4xl/none md:text-5xl lg:text-7xl text-balance">
-                <span class="text-blue-600">{{ Number::format($visitors) }}</span> monthly visitors read my blog
+                <span class="text-primary-color">{{ Number::format($visitors) }}</span> monthly visitors read my blog
             </div>
         @endif
 
@@ -62,7 +62,7 @@
 
     <x-section title="عن معاذ الغرابلي" id="about" class="mt-24 lg:max-w-screen-md md:mt-32">
         <x-prose class="mt-8">
-            <img src="{{asset('imgs/mudev.png')}}" alt="Benjamin Crozat"
+            <img src="{{asset('imgs/avatar.png')}}" alt="Benjamin Crozat"
                 class="float-right mt-4 ml-4 !rounded-full size-28 md:size-32" />
 
                 {!! Str::markdown(

@@ -97,3 +97,11 @@ input[type="search"]::-webkit-search-results-decoration {
     background-color: #EA4334;
     color: #fff;
 }
+
+.bg-primary-color{
+    background:rgb(140, 82, 253);
+}
+
+.text-primary-color{
+    background:rgb(140, 82, 253);
+}
