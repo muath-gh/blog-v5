@@ -1,5 +1,5 @@
 ---
-Image: https://muath.algharabli.com/imgs/blog/posts/eloquent-opt/eloquent-performance.png
+Image: https://muath.algharabli.com/imgs/blog/posts/el-performance/el-performance.png
 Title: "تحسين أداء Laravel Eloquent"
 Description: "دليل شامل لتحسين أداء Eloquent في Laravel، نشرح فيه مشاكل مثل lazy loading و N+1، ونستعرض طرق الحل مثل eager loading وميزات Laravel 12 الحديثة."
 Published at: 2025-04-10
