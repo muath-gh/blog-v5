@@ -103,5 +103,5 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .text-primary-color{
-    background:rgb(140, 82, 253);
+    color:rgb(140, 82, 253);
 }
