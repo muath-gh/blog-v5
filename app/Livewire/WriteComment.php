@@ -2,6 +2,7 @@
 
 namespace App\Livewire;
 
+use App\Jobs\SendNewCommentEmail;
 use App\Models\Comment;
 use Illuminate\Support\Facades\Auth;
 use Livewire\Component;
@@ -19,11 +20,13 @@ class WriteComment extends Component
     {
         $this->validate();
 
-        Comment::create([
+        $comment = Comment::create([
             'user_id' => Auth::id(),
             'post_slug' => $this->postSlug,
             'content' => $this->content,
         ]);
+
+        SendNewCommentEmail::dispatch($comment);
 
         $this->reset('content');
 
