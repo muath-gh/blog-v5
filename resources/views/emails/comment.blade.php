@@ -10,7 +10,7 @@ A new comment has been posted on your site.
 - **Author:** {{ $comment->user?->name ?? 'Guest' }}
 - **Post Title:** {{ $comment->post_slug ?? 'N/A' }}
 - **Comment Body:**  
-{{ $comment->body }}
+{{ $comment->content }}
 
 - **Submitted At:** {{ $comment->created_at->format('Y-m-d H:i') }}
 
