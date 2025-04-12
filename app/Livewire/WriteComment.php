@@ -26,7 +26,7 @@ class WriteComment extends Component
             'content' => $this->content,
         ]);
 
-        SendNewCommentEmail::dispatch($comment);
+       // SendNewCommentEmail::dispatch($comment);
 
         $this->reset('content');
 
