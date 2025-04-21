@@ -23,7 +23,7 @@
         </a>
 
         <img
-            src="{{asset('imgs/mudev.png')}}"
+            src="{{asset('imgs/avatar.png')}}"
             alt="Benjamin Crozat"
             class="rounded-full ring-1 ring-black/5 size-10"
         />
