@@ -26,7 +26,7 @@ class HomeController extends Controller
                 ->fetch()
                 ->map(app(ParsePost::class)->parse(...))
                 ->sortByDesc('published_at')
-                ->take(12)
+                ->take(6)
                 ->map(function (array $post) {
                     $post['comments_count'] = Comment::query()
                         ->where('post_slug', $post['slug'])
